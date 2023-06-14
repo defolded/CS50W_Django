@@ -1,0 +1,10 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Encyclopedia
+{% endblock %}
+
+{% block body %}
+    {{ text | safe }}
+    <a class="link-primary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" href="{{title}}/edit">Edit</a>
+{% endblock %}
